@@ -77,5 +77,5 @@ g) The configs are in bigip.conf style. So, I have found the following procedure
      only one Vlan. If you want to remove this you are free to modify the script or delete it from F5 Configs file that gets generated.
  
  
- Please you at your own risk. This script has saved my time and thought releasing it so that it would be helpful for you.
+ Please use at your own risk. This script has saved my time and thought releasing it so that it would be helpful for you.
  */
