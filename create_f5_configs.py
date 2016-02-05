@@ -501,13 +501,13 @@ if style_type == 1:
                                     config_file.write("            context serverside\n")
                                     config_file.write("        }\n")                                
                                 if virtualserver_protocol == "tcp":
-                                    config_file.write("        tcp-lan-optimized-30{}\n")
+                                    config_file.write("        tcp-lan-optimized{}\n")
                                 else:
                                     config_file.write("        udp{}\n")
                                 if sticky_virtual and sticky_type == "http-cookie":
                                     http_profile = True
                                     config_file.write("        http{}\n")
-                                    config_file.write("        single-ip-oneconnect{}\n")
+                                    config_file.write("        oneconnect{}\n")
                                 if is_irule and not http_profile:
                                     config_file.write("        http{}\n")
                                 
@@ -570,7 +570,7 @@ if style_type == 1:
                             config_file.write("    mask " + "255.255.255.255" +"\n")
                             config_file.write("    profiles {\n")
                             config_file.write("        http{}\n")
-                            config_file.write("        tcp-lan-optimized-30{}\n")
+                            config_file.write("        tcp-lan-optimized{}\n")
                             config_file.write("    }\n")
                             config_file.write("    rules {\n")
                             config_file.write("        " + irule_name + "\n")
