@@ -20,9 +20,9 @@ a) Save the ACE configs in a file. Example "all_ace_configs.txt"
 b) Create a text file with the name of the VIPS that you want to generate equivalent config. For example you want to generate configs for 50 VIPS out of 700 VIPS.
 so the text file should contain the exact name of 50 VIPS. File "first_batch_vips.txt" So the contents of the file would be.
 
-vip1_a
-vip2_a
-vip3_a  
+vip1_a <br/>
+vip2_a <br/>
+vip3_a <br/>  
 (Please provide the appropriate names separated by newline)
 
 (I used Cisco ANM to dump the VIP names in xls sheet and copy that to a text file.)
