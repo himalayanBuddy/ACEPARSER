@@ -35,9 +35,8 @@ d) Now run the script as:
 python create_f5_configs.py \<allaceconfigsfile\> \<vipstobemigratedfile\>
 
 example:
-<b>
-\>\>\> python create_f5_configs.py all_ace_configs.txt first_batch_vips.txt
-</b>
+<b> \>\>\> python create_f5_configs.py all_ace_configs.txt first_batch_vips.txt </b>
+
 e) To comply with virtual server name match with the DNS names. The script will do DNS lookup of the VIRTUAL IP. If it gets Domain Name, It will use the first part separated by dots. So, if domain name is "zzz.example.com". The virtual server name will start with "zzz".
 
 If it's http virtual server then, full virtual server name will be.
