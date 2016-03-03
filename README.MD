@@ -52,9 +52,9 @@ f) All F5 LTM configs are generated inside F5Configs folder.
 - Other objects are written per vip wise.
 
 g) The configs are in bigip.conf style. So, I have found the following procedure best for me while importing the configs to F5 LTM.
- - First I verified the configs if it is generated as required. If needed made few modifications manually. As, this might not work 100%
- Then: 
+ - First I verified the configs if it is generated as required. If needed made few modifications manually. As, this might not work 100%.
  
+ Then: 
  1.	Create a Folder in /shared/tmp or /var/tmp on F5 LTM.
  2.	Upload the files to /share/tmp/<folder> or /var/tmp/<folder> directory on F5 LTM.
  3. First verify the files to check if the configuration is ok to merge and load.
@@ -64,15 +64,15 @@ g) The configs are in bigip.conf style. So, I have found the following procedure
  5.	Save the config:
      (tmsh)# save sys config
  6.	Sync the config
-
  
  Few things to consider:
  
  I have used 
- a) Snatpool and it uses the vip IP. If you want to use any other IPs or automap, please change the script or modify F5 Config files generated.
+ a) Snatpool and it uses the vip IP. If you want to use any other IPs or automap, please change the script or modify F5 Config files  generated.
+ 
  b) The VIP is enabled on certain VLAN. Please check create_f5_configs.py and point it to appropriate vlan. enabled_vlan = "VlanXXX". Currently this script allows only one Vlan. If you want to remove this you are free to modify the script or delete it from F5 Configs file that gets generated.
  
  
 /*
-Please use at your own risk. This script has saved my time and thought releasing it so that it would be helpful for you.
+Please use at your own risk. This script has saved my time and hope it would be helpful for you.
  */
