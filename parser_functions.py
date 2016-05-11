@@ -40,11 +40,11 @@ def write_irule(rule_type, rule_method, rule_value, irule_pool_name, counter_out
     if rule_type == "http" and rule_method == "url":
         #config_file = open(path_to_virtual_file, 'a')
         if counter_outer_irule == 0 and counter_inner_irule == 0:
-            file_handle.write("            if {$uri equals \"/"+ rule_value.lower() +"\"} {\n")
+            file_handle.write("            if {$uri starts_with \"/"+ rule_value.lower() +"\"} {\n")
             file_handle.write("                pool " + irule_pool_name + "\n")
             file_handle.write("            }\n")
         else:
-            file_handle.write("            elseif {$uri equals \"/"+ rule_value.lower() +"\"} {\n")
+            file_handle.write("            elseif {$uri starts_with \"/"+ rule_value.lower() +"\"} {\n")
             file_handle.write("                pool " + irule_pool_name + "\n")
             file_handle.write("            }\n")
     
