@@ -87,6 +87,7 @@ eg:
      (tmsh)# run cm config-sync to-group MY_FAILOVER_GROUP 
  
  Notes:
+ ----
  
  a) The SNATPOOL created uses the vip IP. If you want to use any other IPs or automap, please change the script or modify F5 Config   files generated.
  
