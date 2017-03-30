@@ -6,16 +6,16 @@ This script has helped me lot and saved lots of time migrating ACE configuration
 
 This script has been tailored reading the ACE configurations that we had. But it should basically work on most of all ACE configurations.
 
-Documentation
--------------
+# Documentation
+
 This script contains 3 files.
 
 1. ace2f5parser.py - script parsing the ACE configs
 2. create_f5_configs.py - ace2f5parser.py creates equivalent F5 BIG-IP LTM configuration and saves to file.
 3. parser_functions.py - Related functions and implementations
 
-Usage
-------
+# Usage
+
 1. Save all the ACE configs in a text file. 
 
 On ACE
@@ -86,8 +86,7 @@ eg:
      eg:
      (tmsh)# run cm config-sync to-group MY_FAILOVER_GROUP 
  
- Notes:
- ----
+ # Notes
  
  a) The SNATPOOL created uses the vip IP. If you want to use any other IPs or automap, please change the script or modify F5 Config   files generated.
  
