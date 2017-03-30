@@ -61,31 +61,34 @@ AND One more file for all nodes. all_nodes_file.txt
 
 7.The configs are in bigip.conf style. I have found the following procedure best for me while importing the configs to F5 LTM.
 ```
-a) First I scrutinized the generated text config file. If needed made modifications as required and saved the file. 
-b)	Created a Folder in /shared/tmp or /var/tmp on F5 BIG-IP LTM device where the configs needed to be migrated.
+a)First I scrutinized the generated text config file. If needed made modifications as required and saved the file. 
+
+b)Created a Folder in /shared/tmp or /var/tmp on F5 BIG-IP LTM device where the configs needed to be migrated.
 eg: /var/tmp/First_Batch_F5Configs
-c)	Uploaded the F5 config flies to the folder created in step b.
+
+c)Uploaded the F5 config flies to the folder created in step b.
 eg: After scrutinization on step a "/var/tmp/First_Batch_F5Configs" has:
 vip1_a.txt 
 vip2_a.txt 
 vip3_a.txt
 all_nodes_file.txt
 
-d) Verified the files to check if the configuration is ok to merge and load.
+d)Verified the files to check if the configuration is ok to merge and load.
 eg:
-   (tmsh)# load sys config file /var/tmp/First_Batch_F5Configs/all_nodes_file.txt merge verify
-   (tmsh)# load sys config file /var/tmp/First_Batch_F5Configs/vip1_a.txt merge verify
+  (tmsh)# load sys config file /var/tmp/First_Batch_F5Configs/all_nodes_file.txt merge verify
+  (tmsh)# load sys config file /var/tmp/First_Batch_F5Configs/vip1_a.txt merge verify
    
- e) If it fails with errors, fix the errors and repeated step d.
+ e)If it fails with errors, fix the errors and repeated step d.
  
- f)	If it succeeds without errors, merged the file to BIGIP LTM config as:
+ f)If it succeeds without errors, merged the file to BIGIP LTM config as:
    (tmsh)# load sys config file /var/tmp/First_Batch_F5Configs/all_nodes_file.txt merge
    (tmsh)# load sys config file /var/tmp/First_Batch_F5Configs/vip1_a.txt merge
    
- g).	Saved the config:
+ g)Saved the config:
      eg:
      (tmsh)# save sys config
- h).	Synced the config
+     
+ h)Synced the config
      eg:
      (tmsh)# run cm config-sync to-group MY_FAILOVER_GROUP 
  ```
