@@ -18,9 +18,10 @@ This script contains 3 files.
 
 1. Save all the ACE configs in a text file. 
 
-On ACE
+#### On ACE
+```
 #sh run
-
+```
 save the output to a text file. eg. all_ace_configs.txt
 
 2. Create a text file containing the name of the VIPs that needs to be migrated. If you have ANM you can all dump the VIP names to a single xls file and choose vips from there to save the names in a text file. The names fo the vip in the text file should be exact that you have in the ace configs file created in step 1 "all_ace_configs.txt"
