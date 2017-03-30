@@ -28,9 +28,9 @@ Save the output to a text file. eg. all_ace_configs.txt
 
 Eg. "first_batch_migrate_vip.txt" should contain the vip names. If you have vip names as vip1_a, vip2_a, vip3_a then file should have as below separeated by newlines.
 ```
-vip1_a <br/>
-vip2_a <br/>
-vip3_a <br/>  
+vip1_a
+vip2_a
+vip3_a  
 ```
 
 3.Create a folder named "F5Configs" with read/write access on the location where you are running the script. To change the location you need to modify "create_f5_configs.py" script.
