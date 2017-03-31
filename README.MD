@@ -95,7 +95,7 @@ eg:
  ```
  # Notes
  
- a) The SNATPOOL created uses the vip IP. If you want to use any other IPs or automap, please change the script or modify F5 Config         files generated.
+ a) The SNATPOOL created uses the vip IP. If you want to use any other IPs or automap, please change the script or modify LTM Config         files generated.
  
- b) The VIP is enabled on certain VLAN. Please check create_f5_configs.py and point it to appropriate vlan. enabled_vlan = "VlanXXX".       Currently this script allows only one Vlan. If you want to remove please modify the script or delete it from F5 Configs file that       gets generated.
+ b) The VIP is enabled on certain VLAN. Please check create_f5_configs.py and point it to appropriate vlan. enabled_vlan = "Vlan888".       Currently this script allows only one Vlan. If you want to remove please modify the script or delete it from LTM Configs file that       gets generated.
  
