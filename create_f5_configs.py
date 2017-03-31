@@ -3,7 +3,7 @@ import parser_functions as function
 import os
 import sys
 
-#This file is to create F5 configs from the data provided by the parser.py file
+#This file is to create F5 configs from the data provided by the ace2f5_parser.py file
 
 
 #Style one, All Configuration in Single File
