@@ -4,7 +4,7 @@ This script is developed to parse ACE configuration and convert it to equivalent
 It is developed using Python 3. But runs great in Python 2. If any errors running on python 2.x please let me know. 
 This script has helped me lot and saved lots of time migrating ACE configurations to F5 LTM.
 
-This script has been tailored reading the ACE configurations that we had. But it should basically work on most of all ACE configurations.
+This script has been tailored reading the ACE configurations that we had. But it should basically work on most of all ACE configurations. Be careful on scrutnizing the configs to verify if that meets your need before importing it to LTM. 
 
 # Documentation
 
