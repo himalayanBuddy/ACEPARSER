@@ -464,7 +464,7 @@ if style_type == 1:
                         #print (virtual_servers_all)
                         for virtual_details in virtual_servers_all:
                             #print (virtual_details)
-                            (virtual_server_ip_address, virtual_server_protocol, virtualserver_port) = virtual_details
+                            (virtual_server_ip_address, virtualserver_protocol, virtualserver_port) = virtual_details
                             #Mapping the Ports 
                             (virtualserver_port, vs_port_name)=function.port_mappings(virtualserver_port)
 
@@ -537,7 +537,7 @@ if style_type == 1:
             
                         virtual_servers_all = parsed_data.virtual_ip_proto_port_dict[vip_name]
                         for virtual_details in virtual_servers_all:
-                            (virtual_server_ip_address, virtual_server_protocol, virtualserver_port) = virtual_details
+                            (virtual_server_ip_address, virtualserver_protocol, virtualserver_port) = virtual_details
                             (virtualserver_port, vs_port_name)=function.port_mappings(virtualserver_port)
                             (is_domain_lookup, virtual_initial_name) = function.dns_mappings(virtual_server_ip_address)
                             if not is_domain_lookup:
